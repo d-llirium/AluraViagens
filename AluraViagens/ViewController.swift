@@ -11,13 +11,13 @@ import UIKit
 class ViewController: UIViewController
                     , UITableViewDataSource
 {
-    
-    
+    // MARK: - Outlets
+    @IBOutlet weak var viagensTableView: UITableView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        viagensTableView.dataSource = self
     }
 
 }
