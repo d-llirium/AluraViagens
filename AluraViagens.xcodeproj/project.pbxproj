@@ -13,6 +13,8 @@
 		CE1075902846A67B00843B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE10758E2846A67B00843B43 /* Main.storyboard */; };
 		CE1075922846A69100843B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1075912846A69100843B43 /* Assets.xcassets */; };
 		CE1075952846A69100843B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1075932846A69100843B43 /* LaunchScreen.storyboard */; };
+		CE13FA2D28492996009D8701 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */; };
+		CE13FA2F28492BB2009D8701 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13FA2E28492BB2009D8701 /* HomeTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE1075912846A69100843B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1075942846A69100843B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1075962846A69100843B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		CE13FA2E28492BB2009D8701 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CE1075912846A69100843B43 /* Assets.xcassets */,
 				CE1075932846A69100843B43 /* LaunchScreen.storyboard */,
 				CE1075962846A69100843B43 /* Info.plist */,
+				CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */,
+				CE13FA2E28492BB2009D8701 /* HomeTableViewHeader.swift */,
 			);
 			path = AluraViagens;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1075952846A69100843B43 /* LaunchScreen.storyboard in Resources */,
+				CE13FA2D28492996009D8701 /* HomeTableViewHeader.xib in Resources */,
 				CE1075922846A69100843B43 /* Assets.xcassets in Resources */,
 				CE1075902846A67B00843B43 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE10758D2846A67B00843B43 /* ViewController.swift in Sources */,
+				CE13FA2F28492BB2009D8701 /* HomeTableViewHeader.swift in Sources */,
 				CE1075892846A67B00843B43 /* AppDelegate.swift in Sources */,
 				CE10758B2846A67B00843B43 /* SceneDelegate.swift in Sources */,
 			);

@@ -9,7 +9,6 @@ import UIKit
 
 
 class ViewController: UIViewController
-                    , UITableViewDataSource
 {
     // MARK: - Outlets
     @IBOutlet weak var viagensTableView: UITableView!
@@ -18,12 +17,19 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         viagensTableView.dataSource = self
+        viagensTableView.delegate = self
+        
+        view.backgroundColor = UIColor(
+            red: 30/255
+            , green: 59/255
+            , blue: 119/255
+            , alpha: 1
+        )
     }
 
 }
 
-// MARK: - UITableViewDataSource
-extension ViewController
+extension ViewController: UITableViewDataSource
 {
     func tableView(
         _ tableView: UITableView
@@ -43,6 +49,30 @@ extension ViewController
         cell.textLabel?.text = "viagen \(indexPath.row)"
         
         return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate
+{
+    func tableView(
+        _ tableView: UITableView
+        , viewForHeaderInSection section: Int
+    ) -> UIView? {
+        let headerView = Bundle.main.loadNibNamed(
+            "HomeTableViewHeader"
+            , owner: self
+            , options: nil
+        )?.first as? HomeTableViewHeader
+        headerView?.configuraView()
+        
+        return headerView
+    }
+    func tableView(
+        _ tableView: UITableView
+        , heightForHeaderInSection section: Int
+    ) -> CGFloat {
+        
+        return 300
     }
 }
 
