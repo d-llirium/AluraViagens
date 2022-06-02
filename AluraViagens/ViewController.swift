@@ -7,13 +7,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+class ViewController: UIViewController
+                    , UITableViewDataSource
+{
+    
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
 }
+
+// MARK: - UITableViewDataSource
+extension ViewController
+{
+    func tableView(
+        _ tableView: UITableView
+        , numberOfRowsInSection section: Int
+    ) -> Int {
+        return 10
+    }
+    
+    func tableView(
+        _ tableView: UITableView
+        , cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
+        let cell = UITableViewCell(
+            style: .default
+            , reuseIdentifier: nil
+        )
+        cell.textLabel?.text = "viagen \(indexPath.row)"
+        
+        return cell
+    }
+}
+
 
