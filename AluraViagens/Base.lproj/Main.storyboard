@@ -16,14 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k7q-FS-K0f">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k7q-FS-K0f">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k7q-FS-K0f" secondAttribute="bottom" id="C1b-uy-pxh"/>
+                            <constraint firstItem="k7q-FS-K0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MFy-vp-x19"/>
+                            <constraint firstItem="k7q-FS-K0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZLI-QO-ySb"/>
+                            <constraint firstItem="k7q-FS-K0f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qyc-4d-dSm"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="viagensTableView" destination="k7q-FS-K0f" id="dAu-Dh-P1M"/>
