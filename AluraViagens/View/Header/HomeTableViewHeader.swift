@@ -12,6 +12,7 @@ class HomeTableViewHeader: UIView
     // MARK: - Outlets
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var bannerImageView: UIImageView!
     
     func configuraView()
@@ -22,6 +23,15 @@ class HomeTableViewHeader: UIView
             , blue: 119/255
             , alpha: 1
         )
+        headerView.layer.cornerRadius = 100
+        headerView.layer.maskedCorners =
+        [
+            .layerMaxXMaxYCorner
+            , .layerMinXMaxYCorner
+    ]
+        
+        bannerView.layer.cornerRadius = 10
+        bannerView.layer.masksToBounds = true
     }
 
 }
