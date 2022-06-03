@@ -94,10 +94,10 @@
 		CE13FA32284A5919009D8701 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE13FA35284AA18C009D8701 /* Cells */,
 				CE10758C2846A67B00843B43 /* ViewController.swift */,
 				CE10758E2846A67B00843B43 /* Main.storyboard */,
 				CE13FA33284A5957009D8701 /* Header */,
+				CE13FA35284AA18C009D8701 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
