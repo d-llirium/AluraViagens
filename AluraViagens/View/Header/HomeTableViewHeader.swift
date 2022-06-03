@@ -23,7 +23,7 @@ class HomeTableViewHeader: UIView
             , blue: 119/255
             , alpha: 1
         )
-        headerView.layer.cornerRadius = 100
+        headerView.layer.cornerRadius = 500
         headerView.layer.maskedCorners =
         [
             .layerMaxXMaxYCorner

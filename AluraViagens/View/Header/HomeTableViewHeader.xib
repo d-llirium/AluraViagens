@@ -15,11 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njR-xy-dFT" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EM-RQ-WfI">
-                            <rect key="frame" x="35" y="34" width="152" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EM-RQ-WfI">
+                            <rect key="frame" x="313" y="48" width="144" height="33"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -28,6 +27,8 @@
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="B28-Yy-Tw1"/>
+                        <constraint firstAttribute="width" constant="1000" id="FvE-da-4da"/>
+                        <constraint firstItem="9EM-RQ-WfI" firstAttribute="top" secondItem="njR-xy-dFT" secondAttribute="top" constant="48" id="chi-Lb-Ml5"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-VY-JfA" userLabel="Banner View">
@@ -60,7 +61,7 @@
                             </constraints>
                         </view>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="qco-Hg-Eji">
-                            <rect key="frame" x="199" y="0.0" width="176" height="130"/>
+                            <rect key="frame" x="200" y="0.0" width="175" height="130"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,21 +71,21 @@
                         <constraint firstItem="qco-Hg-Eji" firstAttribute="top" secondItem="IBL-VY-JfA" secondAttribute="top" id="DZD-gH-06a"/>
                         <constraint firstItem="xq5-NE-BhA" firstAttribute="top" secondItem="IBL-VY-JfA" secondAttribute="top" id="Y5w-6m-mzk"/>
                         <constraint firstItem="qco-Hg-Eji" firstAttribute="bottom" secondItem="IBL-VY-JfA" secondAttribute="bottom" id="aLP-4R-w9f"/>
+                        <constraint firstItem="qco-Hg-Eji" firstAttribute="width" secondItem="IBL-VY-JfA" secondAttribute="width" multiplier="0.466667" id="aRi-nn-oeQ"/>
                         <constraint firstItem="xq5-NE-BhA" firstAttribute="bottom" secondItem="IBL-VY-JfA" secondAttribute="bottom" id="dry-Gn-W9C"/>
-                        <constraint firstItem="xq5-NE-BhA" firstAttribute="width" secondItem="IBL-VY-JfA" secondAttribute="width" multiplier="0.533333" id="itq-uB-vXc"/>
+                        <constraint firstItem="xq5-NE-BhA" firstAttribute="width" secondItem="IBL-VY-JfA" secondAttribute="width" multiplier="0.533333" id="mcA-PD-ddv"/>
                         <constraint firstItem="qco-Hg-Eji" firstAttribute="trailing" secondItem="IBL-VY-JfA" secondAttribute="trailing" id="qun-9G-9fk"/>
-                        <constraint firstItem="qco-Hg-Eji" firstAttribute="width" secondItem="IBL-VY-JfA" secondAttribute="width" multiplier="0.469333" id="yWF-pL-d4c"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="njR-xy-dFT" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="72z-tZ-pKl"/>
                 <constraint firstItem="njR-xy-dFT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-44" id="Bdv-3R-PK3"/>
-                <constraint firstItem="njR-xy-dFT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JTx-Bb-Ua3"/>
-                <constraint firstItem="IBL-VY-JfA" firstAttribute="leading" secondItem="njR-xy-dFT" secondAttribute="leading" constant="19" id="cDm-FB-TfL"/>
-                <constraint firstItem="IBL-VY-JfA" firstAttribute="trailing" secondItem="njR-xy-dFT" secondAttribute="trailing" constant="-20" id="q4L-JN-Mia"/>
+                <constraint firstItem="IBL-VY-JfA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="cDm-FB-TfL"/>
+                <constraint firstItem="9EM-RQ-WfI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fG2-Cj-WYv"/>
+                <constraint firstItem="njR-xy-dFT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oWj-rb-uv6"/>
+                <constraint firstItem="IBL-VY-JfA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="q4L-JN-Mia"/>
                 <constraint firstItem="IBL-VY-JfA" firstAttribute="bottom" secondItem="njR-xy-dFT" secondAttribute="bottom" constant="10" id="x1N-yP-7rS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
