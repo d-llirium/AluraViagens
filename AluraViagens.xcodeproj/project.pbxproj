@@ -60,17 +60,57 @@
 		CE1075872846A67B00843B43 /* AluraViagens */ = {
 			isa = PBXGroup;
 			children = (
-				CE1075882846A67B00843B43 /* AppDelegate.swift */,
-				CE10758A2846A67B00843B43 /* SceneDelegate.swift */,
-				CE10758C2846A67B00843B43 /* ViewController.swift */,
-				CE10758E2846A67B00843B43 /* Main.storyboard */,
+				CE13FA30284A58CE009D8701 /* AppDelegate */,
+				CE13FA31284A58F4009D8701 /* Model */,
+				CE13FA32284A5919009D8701 /* View */,
+				CE13FA34284A5984009D8701 /* View Model */,
 				CE1075912846A69100843B43 /* Assets.xcassets */,
 				CE1075932846A69100843B43 /* LaunchScreen.storyboard */,
 				CE1075962846A69100843B43 /* Info.plist */,
+			);
+			path = AluraViagens;
+			sourceTree = "<group>";
+		};
+		CE13FA30284A58CE009D8701 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE10758A2846A67B00843B43 /* SceneDelegate.swift */,
+				CE1075882846A67B00843B43 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CE13FA31284A58F4009D8701 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE13FA32284A5919009D8701 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE10758C2846A67B00843B43 /* ViewController.swift */,
+				CE10758E2846A67B00843B43 /* Main.storyboard */,
+				CE13FA33284A5957009D8701 /* Header */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE13FA33284A5957009D8701 /* Header */ = {
+			isa = PBXGroup;
+			children = (
 				CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */,
 				CE13FA2E28492BB2009D8701 /* HomeTableViewHeader.swift */,
 			);
-			path = AluraViagens;
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CE13FA34284A5984009D8701 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
