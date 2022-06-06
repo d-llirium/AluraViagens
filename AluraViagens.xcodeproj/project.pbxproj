@@ -124,8 +124,8 @@
 		CE13FA33284A5957009D8701 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */,
 				CE13FA2E28492BB2009D8701 /* HomeTableViewHeader.swift */,
+				CE13FA2C28492996009D8701 /* HomeTableViewHeader.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
