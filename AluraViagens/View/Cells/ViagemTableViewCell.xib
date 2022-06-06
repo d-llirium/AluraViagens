@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7X-I4-oxU" userLabel="BackgroundView">
                         <rect key="frame" x="10" y="10" width="300" height="380"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campos-jordao" translatesAutoresizingMaskIntoConstraints="NO" id="j5H-9g-bha">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campos-jordao" translatesAutoresizingMaskIntoConstraints="NO" id="j5H-9g-bha" userLabel="Viagem Image">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="tJW-2P-XkL"/>
@@ -111,6 +111,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="p7X-I4-oxU" id="cZx-Wr-JNh"/>
+                <outlet property="diariaViagemLabel" destination="7UK-HR-TS4" id="WxJ-UK-l7N"/>
+                <outlet property="precoSemDescontoLabel" destination="Y2z-1u-nou" id="9gq-DI-Dv2"/>
+                <outlet property="precoViagemLabel" destination="XMr-MH-vfE" id="nDi-G1-XDj"/>
+                <outlet property="statusCancelamentoViagemLabel" destination="x3q-lM-70b" id="Jw2-sf-dAI"/>
+                <outlet property="subtituloViagemLabel" destination="Ldh-dO-thp" id="ocX-xy-bcz"/>
+                <outlet property="tituloVIagemLabel" destination="Rks-3l-vIc" id="DsM-RM-k2j"/>
+                <outlet property="viagemImage" destination="j5H-9g-bha" id="C0k-RC-fUT"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="82.366071428571431"/>
         </tableViewCell>
     </objects>

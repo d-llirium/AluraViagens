@@ -46,7 +46,8 @@ extension ViewController: UITableViewDataSource
         _ tableView: UITableView
         , numberOfRowsInSection section: Int
     ) -> Int {
-        return 10
+        
+        return sessaoDeViagens?[ section ].numeroDeLinhas ?? 0
     }
     
     func tableView(
@@ -59,7 +60,18 @@ extension ViewController: UITableViewDataSource
             fatalError( "error creating ViagemTableViewCell" )
         }
         
-        return celulaViagem
+        let viewModel = sessaoDeViagens?[ indexPath.section ]
+        
+        switch viewModel?.tipo
+        {
+        case .destaques:
+            celulaViagem.configuraCelula( viewModel?.viagens[ indexPath.row ] )
+            
+            return celulaViagem
+        default:
+            
+            return UITableViewCell()
+        }
     }
 }
 
