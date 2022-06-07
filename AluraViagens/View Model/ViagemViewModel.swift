@@ -9,7 +9,7 @@ import Foundation
 
 protocol ViagemViewModel
 {
-    var tituloSessao: String { get }
+    var tituloSecao: String { get }
     var tipo: ViagemViewModelType { get }
     var viagens: [ Viagem ] { get set }
     var numeroDeLinhas: Int { get }

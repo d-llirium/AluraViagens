@@ -1,31 +1,33 @@
 //
-//  ViagemDestaqueViewModel.swift
+//  ViagemOfertaViewModel.swift
 //  AluraViagens
 //
-//  Created by user on 03/06/22.
+//  Created by user on 07/06/22.
 //
 
 import Foundation
 
-class ViagemDestaqueViewModel: ViagemViewModel
+class ViagemOfertaViewModel: ViagemViewModel
 {
+    // MARK: - ATRIBUTOS
     var tituloSecao: String
     {
-        return "Destaques"
-        
+        return "Ofertas"
     }
     var tipo: ViagemViewModelType
     {
-        return .destaques
-        
+        return .ofertas
     }
     var viagens: [ Viagem ]
     var numeroDeLinhas: Int
     {
-        return viagens.count
+        return 1
     }
+    
+    // MARK: - INICIALIZADOR
     init(_ viagens: [ Viagem ] )
     {
         self.viagens = viagens
     }
+    
 }
