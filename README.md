@@ -1,12 +1,13 @@
 
-####  [. code history](https://www.codecademy.com/paths/build-ios-apps-with-swiftui/tracks/building-code-history-part-three-swiftui/modules/completing-code-history/articles/building-the-final-screen-swiftui-quiz)
+## [. alura viagens. parte da formação iOS da ALURA ](https://cursos.alura.com.br/formacao-ios)
 
-Using SWIFTUI
+view: Storyboard e XIB
+view controller: UITableView
+
 ### by d_llirium
 
-In this last tutorial, you took your application from a partially functioning quiz to a fully-featured application. 
-You created a final view and view model to display the score. 
-You then used the data from the Game model to generate a user score. 
-You’ve now acquired the skills and core fundamental concepts to build an application all on your own. 
+#### [.. branch 1 > tableView ]
 
-![](https://github.com/d-llirium/codecademy/blob/main/Code%20History/CodeHistory.gif?raw=true)
+<img src="https://github.com/d-llirium/AluraViagens/blob/main/images/iPad_01.png?raw=true" width="300" height="500"> <img src="https://github.com/d-llirium/AluraViagens/blob/main/images/iPhone_01.png?raw=true" width="200" height="400">
+
+![](https://github.com/d-llirium/AluraViagens/blob/main/gifs/iPad_01.gif?raw=true) ![](https://github.com/d-llirium/AluraViagens/blob/main/gifs/iPhone_01.gif?raw=true)
