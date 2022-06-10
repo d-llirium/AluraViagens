@@ -90,6 +90,7 @@ extension ViewController: UITableViewDataSource
             ) as? OfertaTableViewCell else {
                 fatalError( "error creating OfertaTableViewCell" )
             }
+            celulaOferta.configuraCelula( viewModel?.viagens )
             
             return celulaOferta
         default:
