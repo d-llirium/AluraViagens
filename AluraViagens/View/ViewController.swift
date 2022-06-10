@@ -105,6 +105,21 @@ extension ViewController: UITableViewDelegate
 {
     func tableView(
         _ tableView: UITableView
+        , didSelectRowAt indexPath: IndexPath
+    ) {
+        let detalheVC = UIStoryboard(
+            name: "Main"
+            , bundle: nil
+        ).instantiateViewController(
+            withIdentifier: "DetalheViewController"
+        )
+        navigationController?.pushViewController(
+            detalheVC
+            , animated: true
+        )
+    }
+    func tableView(
+        _ tableView: UITableView
         , viewForHeaderInSection section: Int
     ) -> UIView? {
         if section == 0

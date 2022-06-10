@@ -27,6 +27,7 @@
 		CE52A6CE284F8D54008A20BB /* OfertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */; };
 		CE52A6CF284F8D54008A20BB /* OfertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A6CD284F8D54008A20BB /* OfertaTableViewCell.xib */; };
 		CE52A6D1284F9C87008A20BB /* ViagemOfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A6D0284F9C87008A20BB /* ViagemOfertaViewModel.swift */; };
+		CEE3FC622853DE0600FDDC0D /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FC612853DE0600FDDC0D /* DetalheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaTableViewCell.swift; sourceTree = "<group>"; };
 		CE52A6CD284F8D54008A20BB /* OfertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfertaTableViewCell.xib; sourceTree = "<group>"; };
 		CE52A6D0284F9C87008A20BB /* ViagemOfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemOfertaViewModel.swift; sourceTree = "<group>"; };
+		CEE3FC612853DE0600FDDC0D /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CE10758C2846A67B00843B43 /* ViewController.swift */,
+				CEE3FC612853DE0600FDDC0D /* DetalheViewController.swift */,
 				CE10758E2846A67B00843B43 /* Main.storyboard */,
 				CE13FA33284A5957009D8701 /* Header */,
 				CE13FA35284AA18C009D8701 /* Cells */,
@@ -276,6 +279,7 @@
 				CE1075892846A67B00843B43 /* AppDelegate.swift in Sources */,
 				CE10758B2846A67B00843B43 /* SceneDelegate.swift in Sources */,
 				CE13FA47284AAAE1009D8701 /* ViagemViewModel.swift in Sources */,
+				CEE3FC622853DE0600FDDC0D /* DetalheViewController.swift in Sources */,
 				CE13FA49284AABAF009D8701 /* ViagemDestaqueViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
