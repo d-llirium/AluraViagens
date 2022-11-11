@@ -9,45 +9,55 @@ import Foundation
 
 let secaoDeViagens: [ ViagemViewModel ]? = load( "server-response.json" )
 
+// MARK: - func carrega o conteúdo do (arquivo)
 func load(
     _ filename: String
 ) -> [ ViagemViewModel ]? {
-    let data: Data
     
-    guard let file = Bundle.main.url(
+    guard let file = Bundle.main.url( // MARK: - recupera a localização
         forResource: filename
         , withExtension: nil
     )
         else {
             fatalError( "Couldn't find \(filename) in main bundle." )
     }
-    
+
+    let data: Data
     do {
-        data = try Data( contentsOf: file )
+        data = try Data( // MARK: - carrega o arquivo como DADOS (buffer)
+            contentsOf: file
+        )
     } catch {
         fatalError( "Couldn't load \(filename) from main bundle:\n\(error)" )
     }
     
     do {
-        guard let json = try JSONSerialization.jsonObject(
+        guard let json = try JSONSerialization// MARK: - converte / traduz os DADOS para JSON
+            .jsonObject(
             with: data
             , options: []
         ) as? [String: Any] else {
             fatalError( "error to read json dictionary" )
         }
         
-        guard let listaDeViagens = json[ "viagens" ] as? [ String: Any ] else {
+        guard let listaDeViagens = json[ "viagens" ] // MARK: - recurera o conteúdo do JSON com a chave "viagens" - lista de viagens
+                as? [ String: Any ] else {
             fatalError( "error to read travel list" )
         }
         
-        guard let jsonData = TiposDeViagens.jsonToData( listaDeViagens ) else { return nil }
+        guard let jsonData = TiposDeViagens // MARK: - converte / traduz o JSON - lista de viagens - para DADOS
+            .jsonToData(
+            listaDeViagens
+        ) else { return nil }
         
-        let tiposDeViagens = TiposDeViagens.decodeJson( jsonData )
+        let tiposDeViagens = TiposDeViagens // MARK: - DADOS são armazenados nos OBJETOS
+            .decodeJson( jsonData )
         
         var listaViagemViewModel: [ ViagemViewModel ] = []
         
         for secao in listaDeViagens.keys
         {
+            // MARK: - preenche os DICIONÁRIOS de viagens por tipos de viagens
             switch ViagemViewModelType( rawValue: secao )
             {
             case .destaques:

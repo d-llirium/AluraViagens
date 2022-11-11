@@ -13,7 +13,7 @@ struct TiposDeViagens: Codable
     var ofertas: [ Viagem ]?
     var internacionais: [ Viagem ]?
     
-    static func jsonToData(
+    static func jsonToData( // MARK: - JSON -> DADO
         _ json:[ String: Any ]
     ) -> Data? {
         return try? JSONSerialization.data(
@@ -27,7 +27,6 @@ struct TiposDeViagens: Codable
     ) -> TiposDeViagens? {
         
         do {
-            
             return try JSONDecoder().decode(
                 TiposDeViagens.self
                 , from: jsonData

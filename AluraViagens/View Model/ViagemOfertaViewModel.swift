@@ -29,5 +29,4 @@ class ViagemOfertaViewModel: ViagemViewModel
     {
         self.viagens = viagens
     }
-    
 }
