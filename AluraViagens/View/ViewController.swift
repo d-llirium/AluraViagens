@@ -25,7 +25,7 @@ class ViewController: UIViewController
         )
     }
     
-    func configurtaTableView()
+    func configurtaTableView() // listar diferentes conteúdos na mesma lista - exibe diferentes tipos de células
     {
         viagensTableView.register(
             UINib(
@@ -87,7 +87,8 @@ extension ViewController: UITableViewDataSource
         case .ofertas:
             guard let celulaOferta = tableView.dequeueReusableCell(
                 withIdentifier: "OfertaTableViewCell"
-            ) as? OfertaTableViewCell else {
+            ) as? OfertaTableViewCell
+            else {
                 fatalError( "error creating OfertaTableViewCell" )
             }
             celulaOferta.configuraCelula( viewModel?.viagens )
@@ -122,7 +123,7 @@ extension ViewController: UITableViewDelegate
         _ tableView: UITableView
         , viewForHeaderInSection section: Int
     ) -> UIView? {
-        if section == 0
+        if section == 0 // retorna o header somente na seção 0 - para não repetir
         {
             let headerView = Bundle.main.loadNibNamed(
                 "HomeTableViewHeader"
@@ -140,7 +141,7 @@ extension ViewController: UITableViewDelegate
         _ tableView: UITableView
         , heightForHeaderInSection section: Int
     ) -> CGFloat {
-        if section == 0
+        if section == 0 // retorna espaçamento somente no header da seção 0
         {
             return 300
         }

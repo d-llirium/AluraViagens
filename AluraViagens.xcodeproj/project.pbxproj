@@ -175,8 +175,8 @@
 		CE52A6CA284F8CD8008A20BB /* Destaque */ = {
 			isa = PBXGroup;
 			children = (
-				CE13FA36284AA1B0009D8701 /* ViagemTableViewCell.swift */,
 				CE13FA37284AA1B0009D8701 /* ViagemTableViewCell.xib */,
+				CE13FA36284AA1B0009D8701 /* ViagemTableViewCell.swift */,
 			);
 			path = Destaque;
 			sourceTree = "<group>";
