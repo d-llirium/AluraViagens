@@ -17,26 +17,28 @@ class OfertaTableViewCell: UITableViewCell
     @IBOutlet var precoLabels: [UILabel]!
     @IBOutlet var fundoViews: [UIView]!
     
-    func configuraCelula( _ viagens: [Viagem]? )
-    {
-        guard let listaDeViagens = viagens else { return }
+    func configuraCelula(
+        _ viagens: [Viagem]?
+    ) {
+        guard let listaDeViagens = viagens
+        else { return }
         
         for index in 0..<listaDeViagens.count
         {
             setOutlets(
-                index
-                , viagem: listaDeViagens[ index ]
+                index,
+                viagem: listaDeViagens[ index ]
             )
         }
-        
-        fundoViews.forEach { viewAtual in
+        fundoViews.forEach
+        { viewAtual in
             viewAtual.addSombra()
         }
     }
     
     func setOutlets(
-        _ index: Int
-        , viagem: Viagem
+        _ index: Int,
+        viagem: Viagem
     ) {
         let imageOutlet = viagemImages[ index ]
         imageOutlet.image = UIImage( named: viagem.asset )

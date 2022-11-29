@@ -9,10 +9,23 @@ import Foundation
 
 protocol ViagemViewModel
 {
-    var tituloSecao: String { get }
-    var tipo: ViagemViewModelType { get }
-    var viagens: [ Viagem ] { get set }
-    var numeroDeLinhas: Int { get }
+    var tituloSecao: String
+    {
+        get
+    }
+    var tipo: ViagemViewModelType
+    {
+        get
+    }
+    var viagens: [ Viagem ]
+    {
+        get
+        set
+    }
+    var numeroDeLinhas: Int
+    {
+        get
+    }
 }
 
 enum ViagemViewModelType: String

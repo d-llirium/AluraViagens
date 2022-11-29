@@ -23,10 +23,10 @@ class ViagemOfertaViewModel: ViagemViewModel
     {
         return 1
     }
-    
     // MARK: - INICIALIZADOR
-    init(_ viagens: [ Viagem ] )
-    {
+    init(
+        _ viagens: [ Viagem ]
+    ) {
         self.viagens = viagens
     }
 }

@@ -12,10 +12,10 @@ extension UIColor
     class var backgroundWhite: UIColor
     {
         return UIColor(
-            red: 30/255
-            , green: 59/255
-            , blue: 119/255
-            , alpha: 1
+            red: 30/255,
+            green: 59/255,
+            blue: 119/255,
+            alpha: 1
         )
     }
 }

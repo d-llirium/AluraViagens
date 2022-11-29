@@ -25,23 +25,21 @@ class ViewController: UIViewController
     {
         viagensTableView.register(
             UINib(
-                nibName: "ViagemTableViewCell"
-                , bundle: nil
-            )
-            , forCellReuseIdentifier: "ViagemTableViewCell"
+                nibName: "ViagemTableViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "ViagemTableViewCell"
         )
         viagensTableView.register(
             UINib(
-                nibName: "OfertaTableViewCell"
-                , bundle: nil
-            )
-            , forCellReuseIdentifier: "OfertaTableViewCell"
+                nibName: "OfertaTableViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "OfertaTableViewCell"
         )
         viagensTableView.dataSource = self
         viagensTableView.delegate = self
-        
     }
-
 }
 
 // MARK: - UITableViewDataSource
@@ -54,18 +52,16 @@ extension ViewController: UITableViewDataSource
     }
     
     func tableView(
-        _ tableView: UITableView
-        , numberOfRowsInSection section: Int
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int
     ) -> Int {
-        
         return secaoDeViagens?[ section ].numeroDeLinhas ?? 0
     }
     
     func tableView(
-        _ tableView: UITableView
-        , cellForRowAt indexPath: IndexPath
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        
         let viewModel = secaoDeViagens?[ indexPath.section ]
         print("===== SECTION \(indexPath.section)")
         
@@ -74,23 +70,22 @@ extension ViewController: UITableViewDataSource
         case .destaques:
             guard let celulaDestaque = tableView.dequeueReusableCell(
                 withIdentifier: "ViagemTableViewCell"
-            ) as? ViagemTableViewCell else {
+            ) as? ViagemTableViewCell
+            else {
                 fatalError( "error creating ViagemTableViewCell" )
             }
             celulaDestaque.configuraCelula( viewModel?.viagens[ indexPath.row ] )
-            
             return celulaDestaque
         case .ofertas:
             guard let celulaOferta = tableView.dequeueReusableCell(
                 withIdentifier: "OfertaTableViewCell"
-            ) as? OfertaTableViewCell else {
+            ) as? OfertaTableViewCell
+            else {
                 fatalError( "error creating OfertaTableViewCell" )
             }
             celulaOferta.configuraCelula( viewModel?.viagens )
-            
             return celulaOferta
         default:
-            
             return UITableViewCell()
         }
     }
@@ -100,30 +95,45 @@ extension ViewController: UITableViewDataSource
 extension ViewController: UITableViewDelegate
 {
     func tableView(
-        _ tableView: UITableView
-        , didSelectRowAt indexPath: IndexPath
+        _ tableView: UITableView,
+        didDeselectRowAt indexPath: IndexPath
     ) {
-        let detalheVC = UIStoryboard(
-            name: "Main"
-            , bundle: nil
+        let detalheController = UIStoryboard( // acessa o ViewController do StoryBoard
+            name: "Main",
+            bundle: nil
         ).instantiateViewController(
             withIdentifier: "DetalheViewController"
         )
         navigationController?.pushViewController(
-            detalheVC
-            , animated: true
+            detalheController,
+            animated: true
         )
     }
     func tableView(
-        _ tableView: UITableView
-        , viewForHeaderInSection section: Int
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
+        let detalheVC = UIStoryboard(
+            name: "Main",
+            bundle: nil
+        ).instantiateViewController(
+            withIdentifier: "DetalheViewController"
+        )
+        navigationController?.pushViewController(
+            detalheVC,
+            animated: true
+        )
+    }
+    func tableView(
+        _ tableView: UITableView,
+        viewForHeaderInSection section: Int
     ) -> UIView? {
         if section == 0
         {
             let headerView = Bundle.main.loadNibNamed(
-                "HomeTableViewHeader"
-                , owner: self
-                , options: nil
+                "HomeTableViewHeader",
+                owner: self,
+                options: nil
             )?.first as? HomeTableViewHeader
             headerView?.configuraView()
             
@@ -133,8 +143,8 @@ extension ViewController: UITableViewDelegate
     }
     
     func tableView(
-        _ tableView: UITableView
-        , heightForHeaderInSection section: Int
+        _ tableView: UITableView,
+        heightForHeaderInSection section: Int
     ) -> CGFloat {
         if section == 0
         {
@@ -144,8 +154,8 @@ extension ViewController: UITableViewDelegate
     }
     
     func tableView(
-        _ tableView: UITableView
-        , heightForRowAt indexPath: IndexPath
+        _ tableView: UITableView,
+        heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
         return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 400 : 475
     }

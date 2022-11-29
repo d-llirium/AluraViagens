@@ -19,21 +19,24 @@ class ViagemTableViewCell: UITableViewCell
     @IBOutlet weak var precoViagemLabel: UILabel!
     @IBOutlet weak var statusCancelamentoViagemLabel: UILabel!
     
-    func configuraCelula( _ viagem: Viagem? )
-    {
-        viagemImage.image = UIImage( named: viagem?.asset ?? "" )
+    func configuraCelula(
+        _ viagem: Viagem?
+    ) {
+        viagemImage.image = UIImage(
+            named: viagem?.asset ?? ""
+        )
         tituloVIagemLabel.text = viagem?.titulo
         subtituloViagemLabel.text = viagem?.subtitulo
         
         let atributoString: NSMutableAttributedString = NSMutableAttributedString(
-            string: "R$ \(viagem?.precoSemDesconto ?? 0 )"
+            string: "R$ \( viagem?.precoSemDesconto ?? 0 )"
         )
         atributoString.addAttribute(
-            NSAttributedString.Key.strikethroughStyle
-            , value: 1
-            , range: NSMakeRange(
-                0
-                , atributoString.length
+            NSAttributedString.Key.strikethroughStyle,
+            value: 1,
+            range: NSMakeRange(
+                0,
+                atributoString.length
             )
         )
         precoSemDescontoLabel.attributedText = atributoString
@@ -47,9 +50,9 @@ class ViagemTableViewCell: UITableViewCell
             
             diariaViagemLabel.text = " \( numeroDeDias ) \( diarias ) - \( numeroDeHospedes ) \( hospedes )"
         }
-        DispatchQueue.main.async {
+        DispatchQueue.main.async
+        {
             self.backgroundViewCell.addSombra()
         }
     }
-    
 }
