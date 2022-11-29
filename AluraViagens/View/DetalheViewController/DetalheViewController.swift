@@ -2,21 +2,19 @@
 //  DetalheViewController.swift
 //  AluraViagens
 //
-//  Created by user on 22/11/22.
+//  Created by user on 29/11/22.
 //
 
 import UIKit
 
-class DetalheViewController: UIViewController
-{
+class DetalheViewController: UIViewController {
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

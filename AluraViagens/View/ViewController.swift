@@ -94,30 +94,28 @@ extension ViewController: UITableViewDataSource
 // MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate
 {
-    func tableView(
-        _ tableView: UITableView,
-        didDeselectRowAt indexPath: IndexPath
-    ) {
-        let detalheController = UIStoryboard( // acessa o ViewController do StoryBoard
-            name: "Main",
-            bundle: nil
-        ).instantiateViewController(
-            withIdentifier: "DetalheViewController"
-        )
-        navigationController?.pushViewController(
-            detalheController,
-            animated: true
-        )
-    }
+//    func tableView(
+//        _ tableView: UITableView,
+//        didDeselectRowAt indexPath: IndexPath
+//    ) {
+//        let detalheController = UIStoryboard( // acessa o ViewController do StoryBoard
+//            name: "Main",
+//            bundle: nil
+//        ).instantiateViewController(
+//            withIdentifier: "DetalheViewController"
+//        )
+//        navigationController?.pushViewController(
+//            detalheController,
+//            animated: true
+//        )
+//    }
     func tableView(
         _ tableView: UITableView,
         didSelectRowAt indexPath: IndexPath
     ) {
-        let detalheVC = UIStoryboard(
-            name: "Main",
+        let detalheVC = DetalheViewController( // instancia a viewController pelo XIB
+            nibName: "DetalheViewController",
             bundle: nil
-        ).instantiateViewController(
-            withIdentifier: "DetalheViewController"
         )
         navigationController?.pushViewController(
             detalheVC,

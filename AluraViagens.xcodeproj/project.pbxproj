@@ -28,7 +28,8 @@
 		CE52A6CE284F8D54008A20BB /* OfertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */; };
 		CE52A6CF284F8D54008A20BB /* OfertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A6CD284F8D54008A20BB /* OfertaTableViewCell.xib */; };
 		CE52A6D1284F9C87008A20BB /* ViagemOfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A6D0284F9C87008A20BB /* ViagemOfertaViewModel.swift */; };
-		CE8DAF16292D517500C0CE05 /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAF15292D517500C0CE05 /* DetalheViewController.swift */; };
+		CEDB249D293668F70066425B /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB249B293668F70066425B /* DetalheViewController.swift */; };
+		CEDB249E293668F70066425B /* DetalheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDB249C293668F70066425B /* DetalheViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +56,8 @@
 		CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaTableViewCell.swift; sourceTree = "<group>"; };
 		CE52A6CD284F8D54008A20BB /* OfertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfertaTableViewCell.xib; sourceTree = "<group>"; };
 		CE52A6D0284F9C87008A20BB /* ViagemOfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemOfertaViewModel.swift; sourceTree = "<group>"; };
-		CE8DAF15292D517500C0CE05 /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
+		CEDB249B293668F70066425B /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
+		CEDB249C293668F70066425B /* DetalheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,7 @@
 			children = (
 				CE10758E2846A67B00843B43 /* Main.storyboard */,
 				CE10758C2846A67B00843B43 /* ViewController.swift */,
-				CE8DAF15292D517500C0CE05 /* DetalheViewController.swift */,
+				CEDB249A293668D10066425B /* DetalheViewController */,
 				CE13FA33284A5957009D8701 /* Header */,
 				CE13FA35284AA18C009D8701 /* Cells */,
 			);
@@ -195,6 +197,15 @@
 			path = Oferta;
 			sourceTree = "<group>";
 		};
+		CEDB249A293668D10066425B /* DetalheViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB249C293668F70066425B /* DetalheViewController.xib */,
+				CEDB249B293668F70066425B /* DetalheViewController.swift */,
+			);
+			path = DetalheViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDB249E293668F70066425B /* DetalheViewController.xib in Resources */,
 				CE1075952846A69100843B43 /* LaunchScreen.storyboard in Resources */,
 				CE13FA3C284AA8D6009D8701 /* server-response.json in Resources */,
 				CE13FA2D28492996009D8701 /* HomeTableViewHeader.xib in Resources */,
@@ -275,7 +287,7 @@
 				CE13FA38284AA1B0009D8701 /* ViagemTableViewCell.swift in Sources */,
 				CE13FA45284AA94D009D8701 /* UIView+Extension.swift in Sources */,
 				CE52A6D1284F9C87008A20BB /* ViagemOfertaViewModel.swift in Sources */,
-				CE8DAF16292D517500C0CE05 /* DetalheViewController.swift in Sources */,
+				CEDB249D293668F70066425B /* DetalheViewController.swift in Sources */,
 				CE52A6CE284F8D54008A20BB /* OfertaTableViewCell.swift in Sources */,
 				CE13FA40284AA90F009D8701 /* TiposDeViagens.swift in Sources */,
 				CE2EE141292D2D85004E31AC /* UIColor+Extension.swift in Sources */,
