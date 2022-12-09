@@ -3,6 +3,8 @@
 
 ### by d_llirium
 
+![](https://github.com/d-llirium/AluraViagens/blob/main/Gravac%CC%A7a%CC%83o%20de%20Tela%202022-12-09%20a%CC%80s%2016.44.32.gif?raw=true?raw=true)
+
 #### view: Storyboard e XIB
   - StackView
   - Constraints
