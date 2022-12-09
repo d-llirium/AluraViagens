@@ -1,14 +1,87 @@
 
 ## [. alura viagens. parte da formação iOS da ALURA ](https://cursos.alura.com.br/formacao-ios)
 
-view: Storyboard e XIB
-view controller: UITableView
-
 ### by d_llirium
 
-Uso do StackView
-O StackView permite que você aproveite o poder do Auto Layout, criando interfaces de usuário que podem se adaptar dinamicamente à orientação do dispositivo, ao tamanho da tela e qualquer alteração disponível no espaço disponível.
-
-#### [.. branch 1 > tableView ](https://github.com/d-llirium/AluraViagens/tree/tableView)
-
-<img src="https://github.com/d-llirium/AluraViagens/blob/main/images/iPad_01.png?raw=true" width="300" height="500"> <img src="https://github.com/d-llirium/AluraViagens/blob/main/images/iPhone_01.png?raw=true" width="200" height="400">
+view: Storyboard e XIB
+  - StackView
+  - Constraints
+  - ScrollView
+  - TableView
+  - TableViewCell
+  - TableViewHeader
+ 
+view controller: 
+  - UITableView, UITableViewDataSource
+  - UITableViewCell
+  - UINavigationController
+  - protocols: Codable, decodable
+  - delegate protocol
+  
+Actions:
+  - jsonToData
+  - decodeJson
+  - Bundle.main.url( // -> find FILE
+        forResource: filename,
+        withExtension: nil
+    ) 
+  - JSONSerialization // DATA -> JSON
+            .jsonObject(
+            with: data
+            , options: []
+    )
+  -  json[ "objetos" ] // JSON[ key ] -> DICTIONARY
+                as? [ String: Any ]
+  - JSONSerialization.data( // JSON -> DATA
+        withJSONObject: json, 
+        options: []
+    )
+  - JSONDecoder().decode( // DATA -> Object
+        Objeto.self
+        , from: jsonData
+    )
+  - DispatchQueue.main.async // Schedules a block asynchronously
+    {
+      code
+    }
+  - view.addGestureRecognizer( // view -> GestureRecognizer
+      UIGestureRecognizer(
+          target: self,
+          action: #selector(
+              didSelectView(_ : )
+          )
+      )
+    )
+   - @objc func didSelectView(
+        _ gesture: UIGestureRecognizer
+    ) {
+        if let selectedView = gesture.view // retorna a view que recebeu o gesto
+        {
+            let viagemSelecionada = viagens?[
+                selectedView.tag // identifica a view pelo tag
+            ]
+            delegate?.didSelectView( // chamada pela ViewController quando seleciona a célula de oferta
+                viagemSelecionada
+            )
+        }
+     }
+  - tableView.register( // cellNibName -> CellView
+      UINib(
+        nibName: "ViagemTableViewCell",
+        bundle: nil
+      ),
+      forCellReuseIdentifier: "ViagemTableViewCell"
+    )
+  - tableView.dequeueReusableCell( // cellID -> CellObject
+      withIdentifier: "ViagemTableViewCell"
+    ) as? ViagemTableViewCell
+  
+DataTypes:
+  -  UIImage( // objectName -> object
+       named: object?.asset ?? ""
+     )
+  - Data( // conteúdo do arquivo -> DATA
+      contentsOf: file
+    ) 
+  - Dictionaries
+  - HomeTableViewHeader
