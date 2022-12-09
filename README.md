@@ -3,7 +3,7 @@
 
 ### by d_llirium
 
-view: Storyboard e XIB
+#### view: Storyboard e XIB
   - StackView
   - Constraints
   - ScrollView
@@ -11,40 +11,40 @@ view: Storyboard e XIB
   - TableViewCell
   - TableViewHeader
  
-view controller: 
+ 
+#### view controller: 
   - UITableView, UITableViewDataSource
   - UITableViewCell
   - UINavigationController
   - protocols: Codable, decodable
   - delegate protocol
   
-Actions:
-  - jsonToData
-  - decodeJson
-  - Bundle.main.url( // -> find FILE
+  
+#### Actions:
+  - ##### Bundle.main.url( // -> find FILE 
         forResource: filename,
         withExtension: nil
     ) 
-  - JSONSerialization // DATA -> JSON
+  - ##### JSONSerialization // DATA -> JSON
             .jsonObject(
             with: data
             , options: []
     )
-  -  json[ "objetos" ] // JSON[ key ] -> DICTIONARY
+  -  ##### json[ "objetos" ] // JSON[ key ] -> DICTIONARY
                 as? [ String: Any ]
-  - JSONSerialization.data( // JSON -> DATA
+  - ##### JSONSerialization.data( // JSON -> DATA
         withJSONObject: json, 
         options: []
     )
-  - JSONDecoder().decode( // DATA -> Object
+  - ##### JSONDecoder().decode( // DATA -> Object
         Objeto.self
         , from: jsonData
     )
-  - DispatchQueue.main.async // Schedules a block asynchronously
+  - ##### DispatchQueue.main.async // Schedules a block asynchronously
     {
-      code
+      configuração secundária da view 
     }
-  - view.addGestureRecognizer( // view -> GestureRecognizer
+  - ##### view.addGestureRecognizer( // view -> GestureRecognizer
       UIGestureRecognizer(
           target: self,
           action: #selector(
@@ -52,7 +52,7 @@ Actions:
           )
       )
     )
-   - @objc func didSelectView(
+   - ##### @objc func didSelectView(
         _ gesture: UIGestureRecognizer
     ) {
         if let selectedView = gesture.view // retorna a view que recebeu o gesto
@@ -65,18 +65,19 @@ Actions:
             )
         }
      }
-  - tableView.register( // cellNibName -> CellView
+  - ##### tableView.register( // cellNibName -> CellView
       UINib(
         nibName: "ViagemTableViewCell",
         bundle: nil
       ),
       forCellReuseIdentifier: "ViagemTableViewCell"
     )
-  - tableView.dequeueReusableCell( // cellID -> CellObject
+  - ##### tableView.dequeueReusableCell( // cellID -> CellObject
       withIdentifier: "ViagemTableViewCell"
     ) as? ViagemTableViewCell
   
-DataTypes:
+  
+#### DataTypes:
   -  UIImage( // objectName -> object
        named: object?.asset ?? ""
      )
