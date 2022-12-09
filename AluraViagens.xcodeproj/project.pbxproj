@@ -182,8 +182,8 @@
 		CE52A6CA284F8CD8008A20BB /* Destaque */ = {
 			isa = PBXGroup;
 			children = (
-				CE13FA36284AA1B0009D8701 /* ViagemTableViewCell.swift */,
 				CE13FA37284AA1B0009D8701 /* ViagemTableViewCell.xib */,
+				CE13FA36284AA1B0009D8701 /* ViagemTableViewCell.swift */,
 			);
 			path = Destaque;
 			sourceTree = "<group>";
@@ -191,8 +191,8 @@
 		CE52A6CB284F8D36008A20BB /* Oferta */ = {
 			isa = PBXGroup;
 			children = (
-				CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */,
 				CE52A6CD284F8D54008A20BB /* OfertaTableViewCell.xib */,
+				CE52A6CC284F8D54008A20BB /* OfertaTableViewCell.swift */,
 			);
 			path = Oferta;
 			sourceTree = "<group>";

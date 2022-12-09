@@ -11,7 +11,9 @@
         <!--Navigation Controller-->
         <scene sceneID="xdF-bn-Twj">
             <objects>
-                <navigationController navigationBarHidden="YES" toolbarHidden="NO" id="c8c-tj-jys" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="c8c-tj-jys" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p64-mn-KeZ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -39,7 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="k7q-FS-K0f" secondAttribute="bottom" id="C1b-uy-pxh"/>
+                            <constraint firstItem="k7q-FS-K0f" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="C1b-uy-pxh"/>
                             <constraint firstItem="k7q-FS-K0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MFy-vp-x19"/>
                             <constraint firstItem="k7q-FS-K0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZLI-QO-ySb"/>
                             <constraint firstItem="k7q-FS-K0f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qyc-4d-dSm"/>
