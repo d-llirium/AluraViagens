@@ -3,5 +3,7 @@
 
 ### by d_llirium
 
-  - Uso do StackView
-O StackView permite que você aproveite o poder do Auto Layout, criando interfaces de usuário que podem se adaptar dinamicamente à orientação do dispositivo, ao tamanho da tela e qualquer alteração disponível no espaço disponível.
+  - Distribution
+Há algumas maneiras de distribuir elementos dentro do StackView. As principais são: Fill onde os elementos ocupam todo espaço disponível. E também a 'Fill equally' onde todos os elementos ocupam espaços iguais dentro do StackView.
+  - Multiplos StackViews
+Podemos fazer uso de vários StackViews para conseguir desenvolver o layout proposto. No nosso caso, na tela de detalhes discutimos essa técnica que nos auxilia empilhar elementos lado a lado ou um embaixo do outro dentro da mesma View.
