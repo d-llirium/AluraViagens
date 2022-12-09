@@ -12,7 +12,7 @@ class ViagemTableViewCell: UITableViewCell
     //MARK: - Outlets
     @IBOutlet weak var backgroundViewCell: UIView!
     @IBOutlet weak var viagemImage: UIImageView!
-    @IBOutlet weak var tituloVIagemLabel: UILabel!
+    @IBOutlet weak var tituloViagemLabel: UILabel!
     @IBOutlet weak var subtituloViagemLabel: UILabel!
     @IBOutlet weak var diariaViagemLabel: UILabel!
     @IBOutlet weak var precoSemDescontoLabel: UILabel!
@@ -25,7 +25,7 @@ class ViagemTableViewCell: UITableViewCell
         viagemImage.image = UIImage(
             named: viagem?.asset ?? ""
         )
-        tituloVIagemLabel.text = viagem?.titulo
+        tituloViagemLabel.text = viagem?.titulo
         subtituloViagemLabel.text = viagem?.subtitulo
         
         let atributoString: NSMutableAttributedString = NSMutableAttributedString(
